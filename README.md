@@ -1,16 +1,20 @@
 # Matrix-Multiplication-MPI
-C implementation of matrix multiplication program with message passing (MPI)
+C implementation of matrix multiplication program with message passing interface (MPI)
 
 ## Install Instrunctions
 First install MPI, I used [MPICH](https://www.mpich.org/).
 
 ## How to run
 
+### Compile
 ```bash
 $ mpicc mpi-mult.c -o mpimult
-$ mpirun -np 4 --hostfile <hosts-file> ./mpimult
-
 ```
+### Run
+```bash
+$ mpirun -np <host-number> --hostfile <hosts-file> ./mpimult
+```
+
 
 ## Author
 Maria Oikonomidou 
